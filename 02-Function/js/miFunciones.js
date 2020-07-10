@@ -79,3 +79,39 @@ function cualMasGrande( n1, n2 ){
     }
 
 }
+
+// Parametro rest ...NombreArray
+// function nombreFunctio(parametrosNormale, ...NombreArray)
+
+function coches( n, n1, ...coches){
+    console.log(n);
+    console.log(n1);
+    console.log(coches);
+}
+
+function listaCompra(n1,n2,n3,n4){
+    console.log(n1);
+    console.log(n2);
+    console.log(n3);
+    console.log(n4);
+}
+
+// miIsNaN
+
+function miIsNaN(n){
+    if( typeof n != "number" ){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+// function nombre(n1,n2,ne)
+function sumar22( n1, n2, miFunction ){
+
+    let s = n1 + n2 ;
+    
+    miFunction(s);
+
+}
+
