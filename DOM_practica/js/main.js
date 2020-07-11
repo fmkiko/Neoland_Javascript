@@ -51,15 +51,31 @@ card.appendChild(parrafo);
 card.appendChild(btn);
 
 // Añadir la card al html
-articulos.append(card)
+articulos.append(card);
 
+// Creamos un mouseover para cada card, detentado el paso del ratón por la card
+card.addEventListener("mouseover", mouseOver);
+
+card.addEventListener("mouseout", mouseOut);
+
+};// end for para crear las cards
+
+// Si el raton pasa por encima de la card, ponemos el shadow
+function mouseOver(event){
+ 
+    this.style.boxShadow = "5px 5px 5px  #ccc";
+};
+// Si el raton sale de la card, quitamos el shadow
+function mouseOut(event){
+    this.style.boxShadow = "0px 0px 0px #ccc";
 }
 
 // Detectando botón pulsado
 let botones = document.querySelectorAll(".btn"); // Creamos un array con todos los botones
-//  creamos un addEventListener por cada boton
+//  creamos un addEventListener por cada boton 
 botones.forEach(boton => {
-    boton.addEventListener("click", comprar)
+    boton.addEventListener("click", comprar);// Para cada botón de cada card creamos un event click
+    
 })
 
 // function comprar

@@ -42,7 +42,11 @@ section h1 {
     text-align: left;
     width: 33.33%;
     padding: 20px;
+    transition: all 0.5s ease-out;
+
+    
 }
+
 .caja{
     width: 100%;
     height: 200px;
