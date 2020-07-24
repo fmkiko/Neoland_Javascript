@@ -3,14 +3,15 @@
 console.log("hola")
 // interface
 
+
 interface Player{
-    nombre:string;
-    dinero:number;
-    numero:number;
+    getNombre():string;
+    getNumero():number;
+    getDinero():number;
 }
 
 // Clase jugador
-class Jugador{
+class Jugador implements Player{
     // Propiedades
     private nombre:string ;
     private numero:number ;
