@@ -56,7 +56,7 @@ class Jugador implements Player{
 
 };
 // 
-// Classe SalaJugo, una sala de juego tiene jugadore, ruleta y los métodos para el funcionamiento de la sala
+// Classe SalaJugo, una sala de juego tiene jugadores, ruleta y los métodos para el funcionamiento de la sala
 class SalaJuego{
     jugador1: Jugador;
     jugador2: Jugador;
@@ -67,7 +67,7 @@ class SalaJuego{
         this.jugador2 = jugador2;// pasamos el jugador2 que entra por construtor a la propidad de la clase jugador2
     }
     // Métodos de la clase Salajuego
-    // Llamamos al metodo iniciar juego.
+    // método iniciar juego.
     iniciarJuego(){
         this.ruleta = Math.floor(Math.random()*10);
         if( this.jugador1.getNumero() ==  this.ruleta ){
@@ -103,11 +103,11 @@ function main(){
     // instanciamos las clase, es decir cremos el objeto jugador1 y jugador2 y salsJuego
     const jugador1 = new Jugador("Juan", 7, 50);
     const jugador2 = new Jugador("Pepeito", 3, 50);
-    const salaJuego = new SalaJuego(jugador1, jugador2);
+    const salaJuego = new SalaJuego(jugador1, jugador2);// creamos el objeto salaJuego
 
-    const resultadoJuego= salaJuego.iniciarJuego();
+    const resultadoJuego= salaJuego.iniciarJuego();// llamamos al método iniciar juego de la salaJuego
 
-    console.log("Ruleta: " + salaJuego.ruleta);// Para el el numero de la ruleta
+    console.log("Ruleta: " + salaJuego.ruleta);// Para el el número de la ruleta
 
     console.log(resultadoJuego);
     
