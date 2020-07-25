@@ -86,11 +86,11 @@ class SalaJuego{
             }
       
             if( rangoJugador1 > rangoJugador2 ){
-                return "Jugador 2 gama 50€";
+                return "Jugador 2 gana 50€";
             }else if( rangoJugador2 > rangoJugador1 ){
-                return "Jugador 1 gama 50€";
+                return "Jugador 1 gana 50€";
             }else{
-                return "El rango Jugador 1 es: " + rangoJugador1 + " gama 25€ " + "El rango Jugador 2 es: " + rangoJugador2 + " gama 25€";
+                return "El rango Jugador 1 es: " + rangoJugador1 + " gana 25€ " + "El rango Jugador 2 es: " + rangoJugador2 + " gana 25€";
             
             }
         }
