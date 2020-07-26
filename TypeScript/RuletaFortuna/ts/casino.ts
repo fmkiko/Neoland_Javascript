@@ -26,7 +26,7 @@ class Jugador implements Player{
         this.dineroApuesta = 50;
     }
     //métodos
-    // geting
+    // getting // getter
     getNombre():string{
         return this.nombre;
     }
@@ -44,7 +44,7 @@ class Jugador implements Player{
             return 0;
         }
     }
-    // seting
+    // setting // setter
     setNombre(nombre:string){
         this.nombre = nombre;
     }
